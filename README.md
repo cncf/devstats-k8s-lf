@@ -5,7 +5,7 @@ DevStats kubernetes deployment for LF projects (bare kubernetes, no Helm packagi
 
 # Set default namespace
 
-You should set namespace to 'devstats' first: `./k8s/switch_profile.sh devstats`.
+You should set namespace to 'devstats' first: `./switch_namespace.sh devstats`.
 
 
 # Create and test images
