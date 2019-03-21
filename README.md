@@ -8,22 +8,19 @@ DevStats kubernetes deployment for LF projects (bare kubernetes, no Helm packagi
 You should set namespace to 'devstats' first: `./switch_namespace.sh devstats`.
 
 
-# Create and test images
+# Images
 
-Create and remove docker images:
+See `github.com/cncf/devstats-docker-images` for the info about how to build docker images used by this deployment. You can also test them there.
 
-- To create DevStats docker container images and publish them, use: `DOCKER_USER=... ./k8s/build_images.sh`.
-- To drop local DevStats docker container images use: `DOCKER_USER=... ./k8s/remove_images.sh`. They're not needed locally, only Kubernetes cluster needs them.
 
-Testing images (this will not mount PVs and will not propagate secrets):
+# Debugging running pods
 
-- To test sync DevStats image (`devstats-minimal` container): `AWS_PROFILE=... DOCKER_USER=... ./k8s/test_image.sh devstats-minimal`.
-- To test provisioning DevStats image (`devstats` container): `AWS_PROFILE=... DOCKER_USER=... ./k8s/test_image.sh devstats`.
+You can run shell inside the running container:
 
-You can also run shell inside the running container:
+- To bash into a running pod do: `./kubernetes/pod_shell.sh pod-name`, where pod name can be for example: `devstats-provision-1550826466080940119`, `devstats-test-1550826466080940119`, `devstats-minimal-test-1550826466080940119`, `devstats-1550826466080940119`.
 
-- To bash into a running pod do: `AWS_PROFILE=... ./k8s/pod_shell.sh pod-name`, where pod name can be for example: `devstats-provision-1550826466080940119`, `devstats-test-1550826466080940119`, `devstats-minimal-test-1550826466080940119`, `devstats-1550826466080940119`.
 
+TODO: continue
 
 # Secrets
 
