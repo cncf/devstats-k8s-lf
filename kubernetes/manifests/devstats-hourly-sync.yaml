@@ -17,7 +17,8 @@ spec:
         spec:
           containers:
           - command:
-            - devstats
+            - ${CMD}
+            args: [${ARGS}]
             env:
             - name: ONLY
               value: "${ONLY}"

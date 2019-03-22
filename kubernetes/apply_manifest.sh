@@ -3,7 +3,21 @@
 export TIMESTAMP=`date +'%s%N'`
 for f in "$@"
 do
-  # echo "Applying '$f'"
+  fd="${f%.*}.data"
+  if [ -f "$fd" ]
+  then
+    if [ ! -z "$SLEEP" ]
+    then
+      export CMD='/bin/sleep'
+      export ARGS="'36000'"
+    else
+      d=`cat "$fd"`
+      a=($d)
+      export CMD=${a[0]}
+      a=("${a[@]:1}")
+      export ARGS=${a[@]}
+    fi
+  fi
   rm -f error.yaml
   cat "$f" | envsubst | kubectl apply -f - || cat "$f" | envsubst > error.yaml
   if [ -f "error.yaml" ]
