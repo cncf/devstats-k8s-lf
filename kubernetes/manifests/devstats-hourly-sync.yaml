@@ -1,8 +1,11 @@
+---
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: "devstats-${TIMESTAMP}"
+  name: 'devstats-${ONLY}-${TIMESTAMP}'
   labels:
+    type: 'cron'
+    proj: '${ONLY}'
     name: devstats
 spec:
   schedule: "${CRON}"
@@ -11,58 +14,101 @@ spec:
     spec:
       template:
         metadata:
-          name: "devstats-${TIMESTAMP}"
+          name: 'devstats-${ONLY}-${TIMESTAMP}'
           labels:
+            type: 'sync'
+            proj: '${ONLY}'
             name: devstats
         spec:
           containers:
           - command:
             - ${CMD}
             args: [${ARGS}]
+            resources:
+              requests:
+                memory: '2Gi'
+                cpu: '500m'
+              limits:
+                memory: '16Gi'
+                cpu: '6000m'
             env:
             - name: ONLY
-              value: "${ONLY}"
-            - name: PG_HOST
-              valueFrom:
-                secretKeyRef:
-                  name: pg-db
-                  key: PG_HOST.secret
+              value: '${ONLY}'
             - name: GHA2DB_USE_ES
+              value: '1'
+            - name: GHA2DB_USE_ES_RAW
+              value: '1'
+            - name: GHA2DB_PROPAGATE_ONLY_VAR
               value: "1"
+            - name: GHA2DB_CHECK_PROVISION_FLAG
+              value: "1"
+            - name: GHA2DB_CHECK_RUNNING_FLAG
+              value: "1"
+            - name: GHA2DB_SET_RUNNING_FLAG
+              value: "1"
+            - name: GHA2DB_NCPUS
+              value: '${GHA2DB_NCPUS}'
+            - name: GHA2DB_ES_BULK_SIZE
+              value: '5000'
+            - name: GHA2DB_DEBUG
+              value: '${GHA2DB_DEBUG}'
+            - name: GHA2DB_CMDDEBUG
+              value: '${GHA2DB_CMDDEBUG}'
+            - name: GHA2DB_GITHUB_DEBUG
+              value: '${GHA2DB_GITHUB_DEBUG}'
+            - name: GHA2DB_QOUT
+              value: '${GHA2DB_QOUT}'
+            - name: GHA2DB_REPOS_DIR
+              value: '${GHA2DB_REPOS_DIR}'
+            - name: GHA2DB_COMPANY_ACQ_YAML
+              value: 'companies.yaml'
+            - name: GHA2DB_AFFILIATIONS_JSON
+              value: 'github_users.json'
+            - name: GHA2DB_COMPUTE_ALL
+              value: '${GHA2DB_COMPUTE_ALL}'
+            - name: GHA2DB_SKIP_METRICS
+              value: '${GHA2DB_SKIP_METRICS}'
+            - name: GHA2DB_ONLY_METRICS
+              value: '${GHA2DB_ONLY_METRICS}'
+            - name: GHA2DB_FORCE_PERIODS
+              value: '${GHA2DB_FORCE_PERIODS}'
+            - name: GHA2DB_PROJECTS_YAML
+              value: 'k8s/projects.yaml'
             - name: GHA2DB_GITHUB_OAUTH
               valueFrom:
                 secretKeyRef:
                   name: github-oauth
                   key: GHA2DB_GITHUB_OAUTH.secret
+            - name: PG_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: pg-db
+                  key: PG_HOST.secret
             - name: PG_PORT
               valueFrom:
                 secretKeyRef:
                   name: pg-db
                   key: PG_PORT.secret
-            - name: GHA2DB_USE_ES_RAW
-              value: "1"
-            - name: GHA2DB_ES_URL
-              valueFrom:
-                secretKeyRef:
-                  name: es-db
-                  key: GHA2DB_ES_URL.secret
-            - name: GHA2DB_PROPAGATE_ONLY_VAR
-              value: "1"
-            - name: GHA2DB_PROJECTS_YAML
-              value: k8s/projects.yaml
             - name: PG_PASS
               valueFrom:
                 secretKeyRef:
                   name: pg-db
                   key: PG_PASS.secret
+            - name: GHA2DB_ES_URL
+              valueFrom:
+                secretKeyRef:
+                  name: es-db
+                  key: GHA2DB_ES_URL.secret
             image: lukaszgryglicki/devstats-minimal
             imagePullPolicy: Always
-            name: "devstats-${TIMESTAMP}"
+            name: 'devstats-${ONLY}-${TIMESTAMP}'
             volumeMounts:
             - name: data
-              mountPath: /root
+              mountPath: '/root'
           volumes:
           - name: data
             persistentVolumeClaim:
               claimName: devstats-git
           restartPolicy: Never
+          # nodeSelector:
+          #   lfda: devstats
