@@ -40,7 +40,7 @@ This is optional (it starts real containers with their command replaced with the
 
 # Deploy on Kubernetes
 
-- Run `./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-pvc.yml` to create presistent volume and persisten volume claim for git repository clones storage. This must be done first.
+- Run `./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-pvc.yaml` to create presistent volume and persisten volume claim for git repository clones storage. This must be done first.
 - You need all secrets to be populated via `./kubernetes/create-secrets.sh`.
 - Run `PROJ=... PROJDB=... PROJREPO=... INIT=1 ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml` to do an initial Kubernetes deployment (bootstraps logs database, users and deploys first project). You can use `ONLYINIT=1` to test bootstraping logs database and users only - that will skip actual first project provision.
 - Run `PROJ=... PROJDB=... PROJREPO=... ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml` to deploy any next project.
