@@ -145,5 +145,5 @@ spec:
     persistentVolumeClaim:
       claimName: devstats-git
   restartPolicy: Never
-  #nodeSelector:
-  #  lfda: devstats
+  # nodeSelector:
+  #   lfda: devstats
