@@ -50,6 +50,3 @@ PROJ=knative                PROJDB=knative                PROJREPO="knative/serv
 PROJ=kubeedge               PROJDB=kubeedge               PROJREPO="kubeedge/kubeedge"               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 52
 PROJ=brigade                PROJDB=brigade                PROJREPO="Azure/brigade"                   ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 53
 PROJ=crio                   PROJDB=crio                   PROJREPO="kubernetes-sigs/cri-o"           ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 54
-sleep 2
-echo "Spawned provisioning pods"
-kubectl get po -l name=devstats
