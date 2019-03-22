@@ -1,10 +1,5 @@
 #!/bin/bash
 # DRYRUN=1 (only display what would be done)
-if [ -z "${AWS_PROFILE}" ]
-then
-  echo "$0: you need to set AWS_PROFILE=... to run this script"
-  exit 1
-fi
 if [ -z "$1" ]
 then
   echo "$0: you need to provide object type as an argument, example: po, svc"

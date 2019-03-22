@@ -1,9 +1,4 @@
 #!/bin/bash
-if [ -z "${AWS_PROFILE}" ]
-then
-  echo "$0: you need to set AWS_PROFILE=... to run this script"
-  exit 1
-fi
 ret=`PROJ=iovisor PROJDB=iovisor PROJREPO='iovisor/bcc' INIT=1 ONLYINIT=1 ./k8s/apply_manifest.sh ./k8s/manifests/devstats-provision.yaml`
 st=$?
 if [ ! "$st" = "0" ]
