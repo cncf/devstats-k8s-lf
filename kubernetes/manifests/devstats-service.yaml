@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: 'devstats-service-${PROJ}'
+  labels:
+    type: 'service'
+    proj: '${PROJ}'
+    name: devstats
+spec:
+  ports:
+  - port: 3000
+  selector:
+    type: 'grafana'
+    proj: '${PROJ}'
+    name: devstats
+  type: LoadBalancer

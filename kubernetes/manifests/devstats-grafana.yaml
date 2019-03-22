@@ -1,0 +1,76 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: 'devstats-grafana-${PROJ}'
+  labels:
+    type: 'grafana'
+    proj: '${PROJ}'
+    name: devstats
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      type: 'grafana'
+      proj: '${PROJ}'
+      name: devstats
+  template:
+    metadata:
+      labels:
+        type: 'grafana'
+        proj: '${PROJ}'
+        name: devstats
+    spec:
+      containers:
+      - command:
+        - ${CMD}
+        args: [${ARGS}]
+        resources:
+          requests:
+            memory: '1Gi'
+            cpu: '500m'
+          limits:
+            memory: '8Gi'
+            cpu: '2000m'
+        name: 'devstats-grafana-${PROJ}'
+        image: lukaszgryglicki/devstats-grafana
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+        env:
+        - name: ICON
+          value: '${ICON}'
+        - name: ORGNAME
+          value: '${ORGNAME}'
+        - name: PROJ
+          value: '${PROJ}'
+        - name: PG_DB
+          value: '${PROJDB}'
+        - name: PG_HOST
+          valueFrom:
+            secretKeyRef:
+              name: pg-db
+              key: PG_HOST.secret
+        - name: PG_PORT
+          valueFrom:
+            secretKeyRef:
+              name: pg-db
+              key: PG_PORT.secret
+        - name: PG_PASS
+          valueFrom:
+            secretKeyRef:
+              name: pg-db
+              key: PG_PASS.secret
+        - name: GF_SECURITY_ADMIN_USER
+          valueFrom:
+            secretKeyRef:
+              name: grafana-secret
+              key: GF_SECURITY_ADMIN_USER.secret
+        - name: GF_SECURITY_ADMIN_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: grafana-secret
+              key: GF_SECURITY_ADMIN_PASSWORD.secret
+      restartPolicy: Always
+      # nodeSelector:
+      #   lfda: devstats
