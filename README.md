@@ -17,7 +17,7 @@ See `github.com/cncf/devstats-docker-images` for the info about how to build doc
 
 You can run shell inside the running container:
 
-- To bash into a running pod do: `./kubernetes/pod_shell.sh pod-name`, where pod name can be for example: `devstats-provision-1550826466080940119`, `devstats-test-1550826466080940119`, `devstats-minimal-test-1550826466080940119`, `devstats-1550826466080940119`.
+- To bash into a running pod do: `./util/pod_shell.sh pod-name`, where pod name can be for example: `devstats-provision-1550826466080940119`, `devstats-test-1550826466080940119`, `devstats-minimal-test-1550826466080940119`, `devstats-1550826466080940119`.
 
 
 TODO: continue
