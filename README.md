@@ -35,7 +35,7 @@ This is optional (it starts real containers with their command replaced with the
 
 - To dry-run manifests against your Kubernetes cluster, run: `./kubernetes/dryrun_manifest.sh ./kubernetes/manifests/*.yaml`. This will show the final manifest and check if it can be applied.
 - Prepend `./kubernetes/apply_manifest.sh` call with `SLEEP=1` to apply a manifest with its command replaced with `sleep 36000`. You can the use `./util/pod_shell.sh` to bash into that container running forever sleep and check its state. You should delete that pod after testing it. It will terminate automatically after 10 hours (36000s).
-- Observe environment via: `env | grep -E '(GHA2DB|^PG_|^ES_|^ONLY|INIT|^PROJ)' | sort`. See PVs mounts: `df -h`. Delete pod `kubectl delete pod pod-name`.
+- Observe environment via: `env | grep -E '(GHA2DB|^PG_|^ES_|^ONLY|INIT|^PROJ)' | sort`. See PV mounts: `df -h`. Delete pod `kubectl delete pod pod-name`.
 
 
 # Deploy on Kubernetes
@@ -45,11 +45,21 @@ This is optional (it starts real containers with their command replaced with the
 - Run `PROJ=... PROJDB=... PROJREPO=... INIT=1 ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml` to do an initial Kubernetes deployment (bootstraps logs database, users and deploys first project). You can use `ONLYINIT=1` to test bootstraping logs database and users only - that will skip actual first project provision.
 - Run `PROJ=... PROJDB=... PROJREPO=... ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml` to deploy any next project.
 - Run `ONLY=projname CRON='8 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml` to create a hourly sync of `projname` at every hour and 8 minutes.
+- Run `PROJ=... PROJDB=... ICON=... ORGNAME=... ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml` to create a Grafana UI pod for a given project.
+- Run `PROJ=... ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml` to expose Grafana via LoadBalancer service.
 - To provision all projects do: `./kubernetes/provision_them_all.sh`, then wait for all `devstats-provision-...` pods to finish. This can take a *LOT* of time.
-- To setup hourly sync for all currently defined project just run: `./kubernetes/cron_them_all.sh`. Do it after all initial provisioning is finished.
+- To setup hourly sync for all currently defined project just run: `./kubernetes/cron_them_all.sh`. Do it after all initial provisioning is finished (not needed but recommended, otherwise cronjobs will wait).
+- To create all Grafanas use: `./kubernetes/grafanas_for_all.sh`. Do it after all initial provisioning is finished (not needed but recommended, otherwise Grafanas will access not fully provisioned databases and some dashboards may not work) until ready).
+- To create LoadBalancer services for all Grafanas use: `./kubernetes/services_for_all.sh`. Do it after grafanas are created, otherwise services will point to voids.
 - To cleanup completed pod, use: `./kubernetes/cleanup_completed_pods.sh`.
 - To delete all DevStats cron jobs run: `./kubernetes/delete_devstats_cron_jobs.sh`.
+
+
+# Helm
+
 - To delete and recreate cron jobs run: `./kubernetes/recreate_cron_jobs.sh`. This uses Helm chart `github.com/cncf/devstats-helm-lf`.
+- Many other examples described in `github.com/cncf/devstats-helm-lf`.
+
 
 # New projects
 
