@@ -1,7 +1,7 @@
 #!/bin/bash
 # DRYRUN=1 (only display what would be done)
 pods=""
-for data in `awskubectl.sh get po | grep CrashLoopBackOff`
+for data in `kubectl get po | grep CrashLoopBackOff`
 do
   pod=`echo "$data" | awk '{print $1}'`
   base=${pod:0:8}
