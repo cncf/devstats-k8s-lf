@@ -50,3 +50,6 @@ ONLY=knative                CRON='53 * * * *' ./kubernetes/apply_manifest.sh ./k
 ONLY=kubeedge               CRON='54 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 50
 ONLY=brigade                CRON='55 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 51
 ONLY=crio                   CRON='56 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 52
+ONLY=tekton                 CRON='57 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 53
+ONLY=jenkinsx               CRON='58 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 54
+ONLY=jenkins                CRON='59 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 55

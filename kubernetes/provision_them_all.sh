@@ -50,3 +50,6 @@ PROJ=knative                PROJDB=knative                PROJREPO="knative/serv
 PROJ=kubeedge               PROJDB=kubeedge               PROJREPO="kubeedge/kubeedge"               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 52
 PROJ=brigade                PROJDB=brigade                PROJREPO="Azure/brigade"                   ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 53
 PROJ=crio                   PROJDB=crio                   PROJREPO="kubernetes-sigs/cri-o"           ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 54
+PROJ=tekton                 PROJDB=tekton                 PROJREPO="knative/build"                   ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 55
+PROJ=jenkinsx               PROJDB=jenkinsx               PROJREPO="jenkins-x/jx"                    ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 56
+PROJ=jenkins                PROJDB=jenkins                PROJREPO="jenkinsci/jenkins"               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 57

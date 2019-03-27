@@ -51,3 +51,6 @@ ICON=cncf           ORGNAME='Knative'                    PROJ=knative           
 ICON=kubeedge       ORGNAME='KubeEdge'                   PROJ=kubeedge               PROJDB=kubeedge               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 52
 ICON=brigade        ORGNAME='Brigade'                    PROJ=brigade                PROJDB=brigade                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 53
 ICON=cncf           ORGNAME='CRI-O'                      PROJ=crio                   PROJDB=crio                   ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 54
+ICON=tekton         ORGNAME='Tekton'                     PROJ=tekton                 PROJDB=tekton                 ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 55
+ICON=jenkinsx       ORGNAME='Jenkins X'                  PROJ=jenkinsx               PROJDB=jenkinsx               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 56
+ICON=jenkins        ORGNAME='Jenkins'                    PROJ=jenkins                PROJDB=jenkins                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 57
