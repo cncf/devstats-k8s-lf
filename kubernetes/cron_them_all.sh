@@ -53,3 +53,4 @@ ONLY=crio                   CRON='56 * * * *' ./kubernetes/apply_manifest.sh ./k
 ONLY=tekton                 CRON='57 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 53
 ONLY=jenkinsx               CRON='58 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 54
 ONLY=jenkins                CRON='59 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 55
+ONLY=networkservicemesh     CRON='6 * * * *'  ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 56

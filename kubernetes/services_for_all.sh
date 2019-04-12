@@ -53,3 +53,4 @@ PROJ=crio                   ./kubernetes/apply_manifest.sh ./kubernetes/manifest
 PROJ=tekton                 ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 53
 PROJ=jenkinsx               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 54
 PROJ=jenkins                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 55
+PROJ=networkservicemesh     ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 56
