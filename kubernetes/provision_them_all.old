@@ -75,7 +75,7 @@ PROJ=falco                  PROJDB=falco                  PROJREPO="falcosecurit
 PROJ=dragonfly              PROJDB=dragonfly              PROJREPO="dragonflyoss/Dragonfly"          ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 45
 PROJ=virtualkubelet         PROJDB=virtualkubelet         PROJREPO="virtual-kubelet/virtual-kubelet" ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 46
 PROJ=opencontainers         PROJDB=opencontainers         PROJREPO="opencontainers/runc"             ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 47
-PROJ=cncf                   PROJDB=cncf                   PROJREPO="cncf/landscape"                  ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 48
+PROJ=cncf                   PROJDB=cncf                   PROJREPO="cncf/landscapeapp"               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 48
 PROJ=istio                  PROJDB=istio                  PROJREPO="istio/istio"                     ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 49
 PROJ=spinnaker              PROJDB=spinnaker              PROJREPO="spinnaker/spinnaker"             ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 50
 PROJ=knative                PROJDB=knative                PROJREPO="knative/serving"                 ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 51
