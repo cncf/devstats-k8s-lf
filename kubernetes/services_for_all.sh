@@ -54,3 +54,4 @@ PROJ=tekton                 ./kubernetes/apply_manifest.sh ./kubernetes/manifest
 PROJ=jenkinsx               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 54
 PROJ=jenkins                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 55
 PROJ=networkservicemesh     ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 56
+PROJ=openebs                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 57

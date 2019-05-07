@@ -55,3 +55,4 @@ ICON=tekton         ORGNAME='Tekton'                     PROJ=tekton            
 ICON=jenkinsx       ORGNAME='Jenkins X'                  PROJ=jenkinsx               PROJDB=jenkinsx               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 56
 ICON=jenkins        ORGNAME='Jenkins'                    PROJ=jenkins                PROJDB=jenkins                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 57
 ICON=cncf           ORGNAME='Network Service Mesh'       PROJ=networkservicemesh     PROJDB=networkservicemesh     ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 58
+ICON=cncf           ORGNAME='OpenEBS'                    PROJ=openebs                PROJDB=openebs                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 59

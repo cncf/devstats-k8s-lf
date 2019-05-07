@@ -54,3 +54,4 @@ PROJ=tekton                 PROJDB=tekton                 PROJREPO="knative/buil
 PROJ=jenkinsx               PROJDB=jenkinsx               PROJREPO="jenkins-x/jx"                          ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 56
 PROJ=jenkins                PROJDB=jenkins                PROJREPO="jenkinsci/jenkins"                     ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 57
 PROJ=networkservicemesh     PROJDB=networkservicemesh     PROJREPO="networkservicemesh/networkservicemesh" ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 58
+PROJ=openebs                PROJDB=openebs                PROJREPO="openebs/openebs"                       ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 59
