@@ -55,3 +55,4 @@ PROJ=jenkinsx               PROJDB=jenkinsx               PROJREPO="jenkins-x/jx
 PROJ=jenkins                PROJDB=jenkins                PROJREPO="jenkinsci/jenkins"                     ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 57
 PROJ=networkservicemesh     PROJDB=networkservicemesh     PROJREPO="networkservicemesh/networkservicemesh" ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 58
 PROJ=openebs                PROJDB=openebs                PROJREPO="openebs/openebs"                       ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 59
+PROJ=opentelemetry          PROJDB=opentelemetry          PROJREPO="open-telemetry/opentelemetry-java"     ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 60
