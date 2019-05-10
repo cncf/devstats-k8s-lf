@@ -56,3 +56,4 @@ PROJ=jenkins                ./kubernetes/apply_manifest.sh ./kubernetes/manifest
 PROJ=networkservicemesh     ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 56
 PROJ=openebs                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 57
 PROJ=opentelemetry          ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 58
+PROJ=graphql                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 59

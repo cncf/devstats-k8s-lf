@@ -56,3 +56,4 @@ PROJ=jenkins                PROJDB=jenkins                PROJREPO="jenkinsci/je
 PROJ=networkservicemesh     PROJDB=networkservicemesh     PROJREPO="networkservicemesh/networkservicemesh" ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 58
 PROJ=openebs                PROJDB=openebs                PROJREPO="openebs/openebs"                       ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 59
 PROJ=opentelemetry          PROJDB=opentelemetry          PROJREPO="open-telemetry/opentelemetry-java"     ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 60
+PROJ=graphql                PROJDB=graphql                PROJREPO="graphql/graphql-js"                    ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 61

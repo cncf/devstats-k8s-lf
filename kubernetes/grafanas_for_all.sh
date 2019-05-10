@@ -57,3 +57,4 @@ ICON=jenkins        ORGNAME='Jenkins'                    PROJ=jenkins           
 ICON=cncf           ORGNAME='Network Service Mesh'       PROJ=networkservicemesh     PROJDB=networkservicemesh     ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 58
 ICON=cncf           ORGNAME='OpenEBS'                    PROJ=openebs                PROJDB=openebs                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 59
 ICON=cncf           ORGNAME='OpenTelemetry'              PROJ=opentelemetry          PROJDB=opentelemetry          ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 60
+ICON=cncf           ORGNAME='GraphQL'                    PROJ=graphql                PROJDB=graphql                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 61

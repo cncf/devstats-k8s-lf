@@ -56,3 +56,4 @@ ONLY=jenkins                CRON='59 * * * *' ./kubernetes/apply_manifest.sh ./k
 ONLY=networkservicemesh     CRON='6 * * * *'  ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 56
 ONLY=openebs                CRON='7 * * * *'  ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 57
 ONLY=opentelemetry          CRON='8 * * * *'  ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 58
+ONLY=graphql                CRON='9 * * * *'  ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 59
