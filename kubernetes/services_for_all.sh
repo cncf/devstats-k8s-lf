@@ -57,3 +57,7 @@ PROJ=networkservicemesh     ./kubernetes/apply_manifest.sh ./kubernetes/manifest
 PROJ=openebs                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 57
 PROJ=opentelemetry          ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 58
 PROJ=graphql                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 59
+PROJ=graphqljs              ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 60
+PROJ=graphiql               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 61
+PROJ=graphqlspec            ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 62
+PROJ=expressgraphql         ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 63

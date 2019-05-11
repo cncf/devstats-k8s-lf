@@ -57,3 +57,7 @@ PROJ=networkservicemesh     PROJDB=networkservicemesh     PROJREPO="networkservi
 PROJ=openebs                PROJDB=openebs                PROJREPO="openebs/openebs"                       ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 59
 PROJ=opentelemetry          PROJDB=opentelemetry          PROJREPO="open-telemetry/opentelemetry-java"     ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 60
 PROJ=graphql                PROJDB=graphql                PROJREPO="graphql/graphql-js"                    ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 61
+PROJ=graphqljs              PROJDB=graphqljs              PROJREPO="graphql/graphql-js"                    ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 62
+PROJ=graphiql               PROJDB=graphiql               PROJREPO="graphql/graphiql"                      ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 63
+PROJ=graphqlspec            PROJDB=graphqlspec            PROJREPO="graphql/graphql-spec"                  ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 64
+PROJ=expressgraphql         PROJDB=expressgraphql         PROJREPO="graphql/express-graphql"               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 65

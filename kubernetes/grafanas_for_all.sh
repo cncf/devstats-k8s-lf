@@ -58,3 +58,7 @@ ICON=cncf           ORGNAME='Network Service Mesh'       PROJ=networkservicemesh
 ICON=cncf           ORGNAME='OpenEBS'                    PROJ=openebs                PROJDB=openebs                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 59
 ICON=cncf           ORGNAME='OpenTelemetry'              PROJ=opentelemetry          PROJDB=opentelemetry          ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 60
 ICON=cncf           ORGNAME='GraphQL'                    PROJ=graphql                PROJDB=graphql                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 61
+ICON=cncf           ORGNAME='GraphQL JavaScript'         PROJ=graphqljs              PROJDB=graphqljs              ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 62
+ICON=cncf           ORGNAME='GraphQL IDE'                PROJ=graphiql               PROJDB=graphiql               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 63
+ICON=cncf           ORGNAME='GraphQL Spec'               PROJ=graphqlspec            PROJDB=graphqlspec            ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 64
+ICON=cncf           ORGNAME='Express GraphQL'            PROJ=expressgraphql         PROJDB=expressgraphql         ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 65

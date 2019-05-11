@@ -57,3 +57,7 @@ ONLY=networkservicemesh     CRON='6 * * * *'  ./kubernetes/apply_manifest.sh ./k
 ONLY=openebs                CRON='7 * * * *'  ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 57
 ONLY=opentelemetry          CRON='8 * * * *'  ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 58
 ONLY=graphql                CRON='9 * * * *'  ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 59
+ONLY=graphqljs              CRON='10 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 60
+ONLY=graphiql               CRON='11 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 61
+ONLY=graphqlspec            CRON='12 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 62
+ONLY=expressgraphql         CRON='13 * * * *' ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-hourly-sync.yaml || exit 63
