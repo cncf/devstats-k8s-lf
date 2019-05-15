@@ -61,3 +61,4 @@ PROJ=graphqljs              ./kubernetes/apply_manifest.sh ./kubernetes/manifest
 PROJ=graphiql               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 61
 PROJ=graphqlspec            ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 62
 PROJ=expressgraphql         ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 63
+PROJ=kubeflow               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-service.yaml || exit 64

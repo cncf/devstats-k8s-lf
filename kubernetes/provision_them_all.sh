@@ -61,3 +61,4 @@ PROJ=graphqljs              PROJDB=graphqljs              PROJREPO="graphql/grap
 PROJ=graphiql               PROJDB=graphiql               PROJREPO="graphql/graphiql"                      ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 63
 PROJ=graphqlspec            PROJDB=graphqlspec            PROJREPO="graphql/graphql-spec"                  ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 64
 PROJ=expressgraphql         PROJDB=expressgraphql         PROJREPO="graphql/express-graphql"               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 65
+PROJ=kubeflow               PROJDB=kubeflow               PROJREPO="kubeflow/kubeflow"                     ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 66
