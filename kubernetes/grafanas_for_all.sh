@@ -56,7 +56,7 @@ ICON=jenkinsx           ORGNAME='Jenkins X'                  PROJ=jenkinsx      
 ICON=jenkins            ORGNAME='Jenkins'                    PROJ=jenkins                PROJDB=jenkins                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 57
 ICON=networkservicemesh ORGNAME='Network Service Mesh'       PROJ=networkservicemesh     PROJDB=networkservicemesh     ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 58
 ICON=openebs            ORGNAME='OpenEBS'                    PROJ=openebs                PROJDB=openebs                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 59
-ICON=cncf               ORGNAME='OpenTelemetry'              PROJ=opentelemetry          PROJDB=opentelemetry          ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 60
+ICON=opentelemetry      ORGNAME='OpenTelemetry'              PROJ=opentelemetry          PROJDB=opentelemetry          ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 60
 ICON=graphql            ORGNAME='GraphQL'                    PROJ=graphql                PROJDB=graphql                ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 61
 ICON=graphqljs          ORGNAME='GraphQL JavaScript'         PROJ=graphqljs              PROJDB=graphqljs              ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 62
 ICON=graphiql           ORGNAME='GraphQL IDE'                PROJ=graphiql               PROJDB=graphiql               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 63
