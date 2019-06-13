@@ -99,7 +99,7 @@ spec:
                 secretKeyRef:
                   name: es-db
                   key: GHA2DB_ES_URL.secret
-            image: lukaszgryglicki/devstats-minimal
+            image: lukaszgryglicki/devstats-minimal-test
             imagePullPolicy: Always
             name: 'devstats-${ONLY}-${TIMESTAMP}'
             volumeMounts:
