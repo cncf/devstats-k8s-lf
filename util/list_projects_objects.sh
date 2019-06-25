@@ -2,7 +2,7 @@
 # LAST=1 - display only last objects listed per each project
 if ( [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] )
 then
-  echo "$0: you need to provide args projects_file.txt object_type prefix"
+  echo "$0: you need to provide args projects_file.txt object_type prefix [suffix]"
   echo "Example LAST=1 $0 all_test_projects.txt pod 'devstats-'"
   exit 1
 fi
@@ -11,7 +11,7 @@ pods=""
 lasts=""
 for proj in `cat "$1"`
 do
-  pod="${3}${proj}"
+  pod="${3}${proj}${4}"
   olen=${#pod}
   last=""
   for obj in $objs

@@ -5,7 +5,7 @@ then
   exit 1
 fi
 > "$2"
-pods=`LAST=1 ./list_projects_objects.sh $1 po 'devstats-'`
+pods=`LAST=1 ./list_projects_objects.sh $1 po 'devstats-' '-'`
 for pod in $pods
 do
   echo "pod '$pod'" >> "$2"
