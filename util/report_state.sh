@@ -3,6 +3,7 @@ echo "========== EVENTS ==========" > report.txt
 kubectl get events >> report.txt
 echo "========== ERRORED PODS ==========" >> report.txt
 objs=`ALL=1 ./list_pods.sh Error`
+pods=""
 for obj in $objs
 do
   IFS=':'
@@ -16,6 +17,8 @@ do
   kubectl -n "$ns" describe pod "$pod"  >> report.txt
   echo "===== logs =====" >> report.txt
   kubectl -n "$ns" logs "$pod" --all-containers | tail -n 100 >> report.txt
+  pods="$pods
+ns: $ns, pod: $pod, status: $sts"
 done
 
 echo "========== CRASH LOOP BACK OFF PODS ==========" >> report.txt
@@ -33,6 +36,8 @@ do
   kubectl -n "$ns" describe pod "$pod" >> report.txt
   echo "===== logs =====" >> report.txt
   kubectl -n "$ns" logs "$pod" --all-containers | tail -n 100 >> report.txt
+  pods="$pods
+ns: $ns, pod: $pod, status: $sts"
 done
 
 echo "========== ImagePullBackOff PODS ==========" >> report.txt
@@ -50,6 +55,8 @@ do
   kubectl -n "$ns" describe pod "$pod" >> report.txt
   echo "===== logs =====" >> report.txt
   kubectl -n "$ns" logs "$pod" --all-containers | tail -n 100 >> report.txt
+  pods="$pods
+ns: $ns, pod: $pod, status: $sts"
 done
 
 echo "========== CONTAINER CREATING PODS ==========" >> report.txt
@@ -67,6 +74,8 @@ do
   kubectl -n "$ns" describe pod "$pod" >> report.txt
   echo "===== logs =====" >> report.txt
   kubectl -n "$ns" logs "$pod" --all-containers | tail -n 100 >> report.txt
+  pods="$pods
+ns: $ns, pod: $pod, status: $sts"
 done
 
 echo "========== PENDING PODS ==========" >> report.txt
@@ -84,4 +93,10 @@ do
   kubectl -n "$ns" describe pod "$pod" >> report.txt
   echo "===== logs =====" >> report.txt
   kubectl -n "$ns" logs "$pod" --all-containers | tail -n 100 >> report.txt
+  pods="$pods
+ns: $ns, pod: $pod, status: $sts"
 done
+
+echo "$pods" > out
+echo "========== PODS LIST ==========" >> report.txt
+cat out | sort >> report.txt
