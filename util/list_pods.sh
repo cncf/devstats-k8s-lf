@@ -1,33 +1,65 @@
 #!/bin/bash
 # ALL=1 - list all namespaces
+# NOT=1 - list pods which state doesn't match the requested state
 if [ -z "$1" ]
 then
-  echo "$0: you need to specify pod state, for example: All, Running, Succeeded, Pending, Failed"
+  echo "$0: you need to specify pod state, for example: All, Running, Completed, Pending, Error, ImagePullBackOff, CrashLoopBackOff, ContainerCreating"
   exit 1
 fi
 if [ -z "$ALL" ]
 then
-  objs=`kubectl get po -o=jsonpath='{range .items[*]}{.metadata.name}{";"}{.metadata.namespace}{";"}{.status.phase}{"\n"}{end}'`
+  objs=`kubectl get pods`
 else
-  objs=`kubectl get po --all-namespaces -o=jsonpath='{range .items[*]}{.metadata.name}{";"}{.metadata.namespace}{";"}{.status.phase}{"\n"}{end}'`
+  objs=`kubectl get pods --all-namespaces`
 fi
+# obj: NAMESPACE
+# obj: NAME
+# obj: READY
+# obj: STATUS
+# obj: RESTARTS
+# obj: AGE
 pods=""
+col=0
 for obj in $objs
 do
-  IFS=';'
-  arr=($obj)
-  unset IFS
-  pod=${arr[0]}
-  ns=${arr[1]}
-  sts=${arr[2]}
-  if [ "$1" = "All" ]
+  if [ "$col" = "0" ]
   then
-    echo "$ns:$pod:$sts"
-    continue
+    if [ -z "$ALL" ]
+    then
+      ns=`kubectl config view --minify --output 'jsonpath={..namespace}'`
+      if [ -z "$ns" ]
+      then
+        ns="default"
+      fi
+      col=1
+    else
+      ns=$obj
+    fi
   fi
-  if [ "$sts" = "$1" ]
+  if [ "$col" = "1" ]
   then
-    pods="${pods} ${ns}:${pod}"
+    pod=$obj
+  fi
+  if [ "$col" = "3" ]
+  then
+    sts=$obj
+  fi
+  col=$((col+1))
+  if [ "$col" = "6" ]
+  then
+    if [ -z "$NOT" ]
+    then
+      if ( [ "$1" = "All" ] || [ "$sts" = "$1" ] )
+      then
+        pods="${pods} ${ns}:${pod}:${sts}"
+      fi
+    else
+      if ( [ "$1" = "All" ] || [ ! "$sts" = "$1" ] )
+      then
+        pods="${pods} ${ns}:${pod}:${sts}"
+      fi
+    fi
+    col=0
   fi
 done
 if [ ! -z "$pods" ]

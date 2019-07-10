@@ -58,6 +58,7 @@ sqlite/*.sql
 *.tar
 /error.yaml
 /util/logs.txt
+/util/report.txt
 !/contributors_and_emails.csv
 !/contributing_actors*.csv
 !/k8s_contributors_and_emails.csv
