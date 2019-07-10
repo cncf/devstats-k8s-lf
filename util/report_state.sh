@@ -40,7 +40,7 @@ do
 ns: $ns, pod: $pod, status: $sts"
 done
 
-echo "========== ImagePullBackOff PODS ==========" >> report.txt
+echo "========== IMAGE PULL BACK OFF PODS ==========" >> report.txt
 objs=`ALL=1 ./list_pods.sh ImagePullBackOff`
 for obj in $objs
 do
