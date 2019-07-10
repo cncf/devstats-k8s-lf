@@ -12,6 +12,9 @@ do
   pod=${arr[1]}
   sts=${arr[2]}
   echo "===== namespace: $ns, pod: $pod, status: $sts =====" >> report.txt
+  echo "===== describe =====" >> report.txt
+  kubectl -n "$ns" describe pod "$pod"  >> report.txt
+  echo "===== logs =====" >> report.txt
   kubectl -n "$ns" logs "$pod" --all-containers | tail -n 100 >> report.txt
 done
 
@@ -26,6 +29,9 @@ do
   pod=${arr[1]}
   sts=${arr[2]}
   echo "===== namespace: $ns, pod: $pod, status: $sts =====" >> report.txt
+  echo "===== describe =====" >> report.txt
+  kubectl -n "$ns" describe pod "$pod" >> report.txt
+  echo "===== logs =====" >> report.txt
   kubectl -n "$ns" logs "$pod" --all-containers | tail -n 100 >> report.txt
 done
 
@@ -40,6 +46,9 @@ do
   pod=${arr[1]}
   sts=${arr[2]}
   echo "===== namespace: $ns, pod: $pod, status: $sts =====" >> report.txt
+  echo "===== describe =====" >> report.txt
+  kubectl -n "$ns" describe pod "$pod" >> report.txt
+  echo "===== logs =====" >> report.txt
   kubectl -n "$ns" logs "$pod" --all-containers | tail -n 100 >> report.txt
 done
 
@@ -54,6 +63,9 @@ do
   pod=${arr[1]}
   sts=${arr[2]}
   echo "===== namespace: $ns, pod: $pod, status: $sts =====" >> report.txt
+  echo "===== describe =====" >> report.txt
+  kubectl -n "$ns" describe pod "$pod" >> report.txt
+  echo "===== logs =====" >> report.txt
   kubectl -n "$ns" logs "$pod" --all-containers | tail -n 100 >> report.txt
 done
 
@@ -68,5 +80,8 @@ do
   pod=${arr[1]}
   sts=${arr[2]}
   echo "===== namespace: $ns, pod: $pod, status: $sts =====" >> report.txt
+  echo "===== describe =====" >> report.txt
+  kubectl -n "$ns" describe pod "$pod" >> report.txt
+  echo "===== logs =====" >> report.txt
   kubectl -n "$ns" logs "$pod" --all-containers | tail -n 100 >> report.txt
 done
