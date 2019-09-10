@@ -62,4 +62,4 @@ ICON=graphqljs          ORGNAME='GraphQL JavaScript'         PROJ=graphqljs     
 ICON=graphiql           ORGNAME='GraphQL IDE'                PROJ=graphiql               PROJDB=graphiql               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 63
 ICON=graphqlspec        ORGNAME='GraphQL Spec'               PROJ=graphqlspec            PROJDB=graphqlspec            ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 64
 ICON=expressgraphql     ORGNAME='Express GraphQL'            PROJ=expressgraphql         PROJDB=expressgraphql         ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 65
-ICON=kubeflow           ORGNAME='Kubeflow'                   PROJ=kubeflow               PROJDB=kubeflow               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 65
+ICON=kubeflow           ORGNAME='Kubeflow'                   PROJ=kubeflow               PROJDB=kubeflow               ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-grafana.yaml || exit 66
