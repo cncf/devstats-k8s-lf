@@ -27,7 +27,12 @@ then
   if [ -z "$DRYRUN" ]
   then
     echo "Deleting $1: ${pods}"
-    kubectl delete $1 ${pods}
+    if [ -z "$3" ]
+    then
+      kubectl delete $1 ${pods}
+    else
+      kubectl delete $1 ${pods} "$3"
+    fi
   else
     echo "Would delete $1: ${pods}"
   fi
