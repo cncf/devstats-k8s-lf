@@ -31,7 +31,7 @@ then
     then
       kubectl delete $1 ${pods}
     else
-      kubectl delete $1 ${pods} "$3"
+      kubectl delete $1 ${pods} "${@:3:99}"
     fi
   else
     echo "Would delete $1: ${pods}"
