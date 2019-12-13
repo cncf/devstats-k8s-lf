@@ -1,0 +1,470 @@
+pod 'devstats-kubernetes-1576219020-rcb6j'
+2019-12-13 06:37:06 /devstats: Updating git repos for all projects
+2019-12-13 06:37:13 /devstats: Updated git repos, took: 7.256161008s
+2019-12-13 06:37:13 /devstats: Syncing #1 kubernetes
+pod 'devstats-prometheus-1576217280-g84gw'
+2019-12-13 06:08:06 /devstats: Updating git repos for all projects
+2019-12-13 06:08:07 /devstats: Updated git repos, took: 863.483807ms
+2019-12-13 06:08:07 /devstats: Syncing #2 prometheus
+2019-12-13 06:09:43 /devstats: Synced prometheus, took: 1m36.147095745s
+2019-12-13 06:09:43 /devstats: Synced all projects in: 1m37.044354241s
+pod 'devstats-opentracing-1576217280-vn5p6'
+2019-12-13 06:08:06 /devstats: Updating git repos for all projects
+2019-12-13 06:08:07 /devstats: Updated git repos, took: 666.406491ms
+2019-12-13 06:08:07 /devstats: Syncing #3 opentracing
+2019-12-13 06:08:38 /devstats: Synced opentracing, took: 30.923124086s
+2019-12-13 06:08:38 /devstats: Synced all projects in: 31.62571081s
+pod 'devstats-fluentd-1576217340-ncjwm'
+2019-12-13 06:09:11 /devstats: Updating git repos for all projects
+2019-12-13 06:09:12 /devstats: Updated git repos, took: 1.612879667s
+2019-12-13 06:09:12 /devstats: Syncing #4 fluentd
+2019-12-13 06:10:04 /devstats: Synced fluentd, took: 51.405497102s
+2019-12-13 06:10:04 /devstats: Synced all projects in: 53.051368119s
+pod 'devstats-linkerd-1576217340-52xvp'
+2019-12-13 06:09:12 /devstats: Updating git repos for all projects
+2019-12-13 06:09:13 /devstats: Updated git repos, took: 922.953656ms
+2019-12-13 06:09:13 /devstats: Syncing #5 linkerd
+2019-12-13 06:09:53 /devstats: Synced linkerd, took: 39.910530797s
+2019-12-13 06:09:53 /devstats: Synced all projects in: 40.873141768s
+pod 'devstats-grpc-1576218000-7vpx4'
+2019-12-13 06:20:04 /devstats: Updating git repos for all projects
+2019-12-13 06:20:06 /devstats: Updated git repos, took: 1.802284451s
+2019-12-13 06:20:06 /devstats: Syncing #6 grpc
+2019-12-13 06:21:08 /devstats: Synced grpc, took: 1m1.472961777s
+2019-12-13 06:21:08 /devstats: Synced all projects in: 1m3.306741539s
+pod 'devstats-coredns-1576217400-kfbxk'
+2019-12-13 06:10:18 /devstats: Updating git repos for all projects
+2019-12-13 06:10:19 /devstats: Updated git repos, took: 1.235772958s
+2019-12-13 06:10:19 /devstats: Syncing #7 coredns
+2019-12-13 06:10:54 /devstats: Synced coredns, took: 35.313108625s
+2019-12-13 06:10:54 /devstats: Synced all projects in: 36.580556344s
+pod 'devstats-containerd-1576217460-r2kj8'
+2019-12-13 06:11:26 /devstats: Updating git repos for all projects
+2019-12-13 06:11:28 /devstats: Updated git repos, took: 1.332723698s
+2019-12-13 06:11:28 /devstats: Syncing #8 containerd
+2019-12-13 06:11:50 /devstats: Synced containerd, took: 22.019476702s
+2019-12-13 06:11:50 /devstats: Synced all projects in: 23.383809578s
+pod 'devstats-rkt-1576217460-kfntn'
+2019-12-13 06:11:36 /devstats: Updating git repos for all projects
+2019-12-13 06:11:37 /devstats: Updated git repos, took: 1.15560617s
+2019-12-13 06:11:37 /devstats: Syncing #9 rkt
+2019-12-13 06:11:56 /devstats: Synced rkt, took: 18.301017758s
+2019-12-13 06:11:56 /devstats: Synced all projects in: 24.487336464s
+pod 'devstats-cni-1576217460-bfc5d'
+2019-12-13 06:11:26 /devstats: Updating git repos for all projects
+2019-12-13 06:11:27 /devstats: Updated git repos, took: 794.088734ms
+2019-12-13 06:11:27 /devstats: Syncing #10 cni
+2019-12-13 06:11:47 /devstats: Synced cni, took: 20.505433227s
+2019-12-13 06:11:47 /devstats: Synced all projects in: 21.331077506s
+pod 'devstats-envoy-1576217520-5lfr4'
+2019-12-13 06:12:35 /devstats: Updating git repos for all projects
+2019-12-13 06:12:36 /devstats: Updated git repos, took: 817.636511ms
+2019-12-13 06:12:36 /devstats: Syncing #11 envoy
+2019-12-13 06:14:10 /devstats: Synced envoy, took: 1m34.15780107s
+2019-12-13 06:14:10 /devstats: Synced all projects in: 1m35.006830764s
+pod 'devstats-jaeger-1576217520-8gkvx'
+2019-12-13 06:12:03 /devstats: Updating git repos for all projects
+2019-12-13 06:12:05 /devstats: Updated git repos, took: 1.843794466s
+2019-12-13 06:12:05 /devstats: Syncing #12 jaeger
+2019-12-13 06:12:44 /devstats: Synced jaeger, took: 39.39567548s
+2019-12-13 06:12:44 /devstats: Synced all projects in: 41.271801121s
+pod 'devstats-notary-1576217580-522zn'
+2019-12-13 06:13:12 /devstats: Updating git repos for all projects
+2019-12-13 06:13:13 /devstats: Updated git repos, took: 529.568104ms
+2019-12-13 06:13:13 /devstats: Syncing #13 notary
+2019-12-13 06:13:31 /devstats: Synced notary, took: 17.860904029s
+2019-12-13 06:13:31 /devstats: Synced all projects in: 18.422371265s
+pod 'devstats-tuf-1576217580-j9wrz'
+2019-12-13 06:13:15 /devstats: Updating git repos for all projects
+2019-12-13 06:13:15 /devstats: Updated git repos, took: 537.307104ms
+2019-12-13 06:13:15 /devstats: Syncing #14 tuf
+2019-12-13 06:13:36 /devstats: Synced tuf, took: 20.785499652s
+2019-12-13 06:13:36 /devstats: Synced all projects in: 21.35524714s
+pod 'devstats-rook-1576217580-ksm4g'
+2019-12-13 06:13:14 /devstats: Updating git repos for all projects
+2019-12-13 06:13:14 /devstats: Updated git repos, took: 629.039686ms
+2019-12-13 06:13:14 /devstats: Syncing #15 rook
+2019-12-13 06:13:38 /devstats: Synced rook, took: 23.396512229s
+2019-12-13 06:13:38 /devstats: Synced all projects in: 24.056598618s
+pod 'devstats-vitess-1576217640-nq46x'
+2019-12-13 06:14:24 /devstats: Updating git repos for all projects
+2019-12-13 06:14:25 /devstats: Updated git repos, took: 1.048966982s
+2019-12-13 06:14:25 /devstats: Syncing #16 vitess
+2019-12-13 06:14:49 /devstats: Synced vitess, took: 24.160912579s
+2019-12-13 06:14:49 /devstats: Synced all projects in: 25.243912497s
+pod 'devstats-nats-1576217640-l55gb'
+2019-12-13 06:14:21 /devstats: Updating git repos for all projects
+2019-12-13 06:14:22 /devstats: Updated git repos, took: 1.130240407s
+2019-12-13 06:14:22 /devstats: Syncing #17 nats
+2019-12-13 06:15:09 /devstats: Synced nats, took: 47.270749302s
+2019-12-13 06:15:09 /devstats: Synced all projects in: 48.43324923s
+pod 'devstats-opa-1576217640-7c7ll'
+2019-12-13 06:14:21 /devstats: Updating git repos for all projects
+2019-12-13 06:14:22 /devstats: Updated git repos, took: 638.391675ms
+2019-12-13 06:14:22 /devstats: Syncing #18 opa
+2019-12-13 06:14:49 /devstats: Synced opa, took: 26.695024477s
+2019-12-13 06:14:49 /devstats: Synced all projects in: 27.362836092s
+pod 'devstats-spiffe-1576217700-8ng5n'
+2019-12-13 06:15:32 /devstats: Updating git repos for all projects
+2019-12-13 06:15:33 /devstats: Updated git repos, took: 1.013520294s
+2019-12-13 06:15:33 /devstats: Syncing #19 spiffe
+2019-12-13 06:15:57 /devstats: Synced spiffe, took: 23.297301557s
+2019-12-13 06:15:57 /devstats: Synced all projects in: 24.342764564s
+pod 'devstats-spire-1576217700-7xcdx'
+2019-12-13 06:15:33 /devstats: Updating git repos for all projects
+2019-12-13 06:15:34 /devstats: Updated git repos, took: 972.407341ms
+2019-12-13 06:15:34 /devstats: Syncing #20 spire
+2019-12-13 06:15:52 /devstats: Synced spire, took: 18.695923877s
+2019-12-13 06:15:52 /devstats: Synced all projects in: 19.701556482s
+pod 'devstats-cloudevents-1576217700-w9766'
+2019-12-13 06:15:27 /devstats: Updating git repos for all projects
+2019-12-13 06:15:28 /devstats: Updated git repos, took: 860.129308ms
+2019-12-13 06:15:28 /devstats: Syncing #21 cloudevents
+2019-12-13 06:15:49 /devstats: Synced cloudevents, took: 21.106196714s
+2019-12-13 06:15:49 /devstats: Synced all projects in: 21.996928098s
+pod 'devstats-telepresence-1576217700-fdh8p'
+2019-12-13 06:15:33 /devstats: Updating git repos for all projects
+2019-12-13 06:15:34 /devstats: Updated git repos, took: 877.002794ms
+2019-12-13 06:15:34 /devstats: Syncing #22 telepresence
+2019-12-13 06:15:53 /devstats: Synced telepresence, took: 18.407910757s
+2019-12-13 06:15:53 /devstats: Synced all projects in: 19.318855582s
+pod 'devstats-helm-1576218660-jdbtv'
+2019-12-13 06:31:30 /devstats: Updating git repos for all projects
+2019-12-13 06:31:31 /devstats: Updated git repos, took: 899.011924ms
+2019-12-13 06:31:31 /devstats: Syncing #23 helm
+2019-12-13 06:32:27 /devstats: Synced helm, took: 55.818670679s
+2019-12-13 06:32:27 /devstats: Synced all projects in: 56.751378291s
+pod 'devstats-openmetrics-1576217760-4zdz2'
+2019-12-13 06:16:06 /devstats: Updating git repos for all projects
+2019-12-13 06:16:07 /devstats: Updated git repos, took: 788.802609ms
+2019-12-13 06:16:07 /devstats: Syncing #24 openmetrics
+2019-12-13 06:16:24 /devstats: Synced openmetrics, took: 17.664940869s
+2019-12-13 06:16:24 /devstats: Synced all projects in: 18.485414679s
+pod 'devstats-harbor-1576217820-sgqgm'
+2019-12-13 06:17:12 /devstats: Updating git repos for all projects
+2019-12-13 06:17:13 /devstats: Updated git repos, took: 735.133398ms
+2019-12-13 06:17:13 /devstats: Syncing #25 harbor
+2019-12-13 06:17:38 /devstats: Synced harbor, took: 25.436850908s
+2019-12-13 06:17:38 /devstats: Synced all projects in: 26.208371408s
+pod 'devstats-etcd-1576217820-d2p7b'
+2019-12-13 06:17:11 /devstats: Updating git repos for all projects
+2019-12-13 06:17:12 /devstats: Updated git repos, took: 813.814277ms
+2019-12-13 06:17:12 /devstats: Syncing #26 etcd
+2019-12-13 06:17:37 /devstats: Synced etcd, took: 24.861325619s
+2019-12-13 06:17:37 /devstats: Synced all projects in: 25.706990629s
+pod 'devstats-tikv-1576217820-dxbps'
+2019-12-13 06:17:17 /devstats: Updating git repos for all projects
+2019-12-13 06:17:18 /devstats: Updated git repos, took: 1.137593964s
+2019-12-13 06:17:18 /devstats: Syncing #27 tikv
+2019-12-13 06:18:00 /devstats: Synced tikv, took: 41.484119947s
+2019-12-13 06:18:00 /devstats: Synced all projects in: 42.655692369s
+pod 'devstats-cortex-1576217880-6tdbh'
+2019-12-13 06:18:19 /devstats: Updating git repos for all projects
+2019-12-13 06:18:20 /devstats: Updated git repos, took: 667.535059ms
+2019-12-13 06:18:20 /devstats: Syncing #28 cortex
+2019-12-13 06:18:39 /devstats: Synced cortex, took: 18.706859318s
+2019-12-13 06:18:39 /devstats: Synced all projects in: 19.408261526s
+pod 'devstats-buildpacks-1576217880-7x84j'
+2019-12-13 06:18:18 /devstats: Updating git repos for all projects
+2019-12-13 06:18:19 /devstats: Updated git repos, took: 660.491072ms
+2019-12-13 06:18:19 /devstats: Syncing #29 buildpacks
+2019-12-13 06:18:48 /devstats: Synced buildpacks, took: 28.691664835s
+2019-12-13 06:18:48 /devstats: Synced all projects in: 29.383794787s
+pod 'devstats-falco-1576217880-v5q22'
+2019-12-13 06:18:20 /devstats: Updating git repos for all projects
+2019-12-13 06:18:21 /devstats: Updated git repos, took: 640.847189ms
+2019-12-13 06:18:21 /devstats: Syncing #30 falco
+2019-12-13 06:18:59 /devstats: Synced falco, took: 38.62366892s
+2019-12-13 06:18:59 /devstats: Synced all projects in: 39.296394772s
+pod 'devstats-dragonfly-1576217940-6fnsg'
+2019-12-13 06:19:29 /devstats: Updating git repos for all projects
+2019-12-13 06:19:29 /devstats: Updated git repos, took: 542.798829ms
+2019-12-13 06:19:29 /devstats: Syncing #31 dragonfly
+2019-12-13 06:19:53 /devstats: Synced dragonfly, took: 23.292918965s
+2019-12-13 06:19:53 /devstats: Synced all projects in: 23.867029814s
+pod 'devstats-virtualkubelet-1576217940-zsnrf'
+2019-12-13 06:19:35 /devstats: Updating git repos for all projects
+2019-12-13 06:19:36 /devstats: Updated git repos, took: 1.015950934s
+2019-12-13 06:19:36 /devstats: Syncing #32 virtualkubelet
+2019-12-13 06:19:55 /devstats: Synced virtualkubelet, took: 19.464801849s
+2019-12-13 06:19:55 /devstats: Synced all projects in: 20.513136837s
+pod 'devstats-kubeedge-1576218060-rq8hl'
+2019-12-13 06:21:14 /devstats: Updating git repos for all projects
+2019-12-13 06:21:15 /devstats: Updated git repos, took: 1.002887035s
+2019-12-13 06:21:15 /devstats: Syncing #33 kubeedge
+2019-12-13 06:21:34 /devstats: Synced kubeedge, took: 18.59180557s
+2019-12-13 06:21:34 /devstats: Synced all projects in: 19.629679614s
+pod 'devstats-brigade-1576218060-7hjm9'
+2019-12-13 06:21:11 /devstats: Updating git repos for all projects
+2019-12-13 06:21:12 /devstats: Updated git repos, took: 1.126414624s
+2019-12-13 06:21:12 /devstats: Syncing #34 brigade
+2019-12-13 06:21:30 /devstats: Synced brigade, took: 18.388940581s
+2019-12-13 06:21:30 /devstats: Synced all projects in: 19.548746911s
+pod 'devstats-crio-1576218120-8q958'
+2019-12-13 06:22:21 /devstats: Updating git repos for all projects
+2019-12-13 06:22:22 /devstats: Updated git repos, took: 1.114076043s
+2019-12-13 06:22:22 /devstats: Syncing #35 crio
+2019-12-13 06:22:45 /devstats: Synced crio, took: 23.389894709s
+2019-12-13 06:22:45 /devstats: Synced all projects in: 24.534790597s
+pod 'devstats-networkservicemesh-1576218180-5gtb4'
+2019-12-13 06:23:32 /devstats: Updating git repos for all projects
+2019-12-13 06:23:33 /devstats: Updated git repos, took: 837.77493ms
+2019-12-13 06:23:33 /devstats: Syncing #36 networkservicemesh
+2019-12-13 06:23:59 /devstats: Synced networkservicemesh, took: 25.828861927s
+2019-12-13 06:23:59 /devstats: Synced all projects in: 26.697413386s
+pod 'devstats-openebs-1576218240-4hvkd'
+2019-12-13 06:24:06 /devstats: Updating git repos for all projects
+2019-12-13 06:24:09 /devstats: Updated git repos, took: 2.877570485s
+2019-12-13 06:24:09 /devstats: Syncing #37 openebs
+2019-12-13 06:25:13 /devstats: Synced openebs, took: 1m3.933316625s
+2019-12-13 06:25:13 /devstats: Synced all projects in: 1m6.842671249s
+pod 'devstats-opentelemetry-1576218240-5t6kf'
+2019-12-13 06:24:07 /devstats: Updating git repos for all projects
+2019-12-13 06:24:08 /devstats: Updated git repos, took: 814.312992ms
+2019-12-13 06:24:08 /devstats: Syncing #38 opentelemetry
+2019-12-13 06:25:02 /devstats: Synced opentelemetry, took: 54.585428592s
+2019-12-13 06:25:02 /devstats: Synced all projects in: 55.430311769s
+pod 'devstats-thanos-1576218240-9zkbp'
+2019-12-13 06:24:09 /devstats: Updating git repos for all projects
+2019-12-13 06:24:10 /devstats: Updated git repos, took: 666.164671ms
+2019-12-13 06:24:10 /devstats: Syncing #39 thanos
+2019-12-13 06:24:32 /devstats: Synced thanos, took: 22.182596541s
+2019-12-13 06:24:32 /devstats: Synced all projects in: 22.883596061s
+pod 'devstats-flux-1576218300-jpzjg'
+2019-12-13 06:25:14 /devstats: Updating git repos for all projects
+2019-12-13 06:25:15 /devstats: Updated git repos, took: 619.589218ms
+2019-12-13 06:25:15 /devstats: Syncing #40 flux
+2019-12-13 06:25:43 /devstats: Synced flux, took: 28.372393741s
+2019-12-13 06:25:43 /devstats: Synced all projects in: 29.022921847s
+pod 'devstats-intoto-1576218300-jtv5j'
+2019-12-13 06:25:15 /devstats: Updating git repos for all projects
+2019-12-13 06:25:15 /devstats: Updated git repos, took: 560.157651ms
+2019-12-13 06:25:15 /devstats: Syncing #41 intoto
+2019-12-13 06:25:33 /devstats: Synced intoto, took: 17.723347221s
+2019-12-13 06:25:33 /devstats: Synced all projects in: 18.344510732s
+pod 'devstats-strimzi-1576218360-zqwj5'
+2019-12-13 06:26:32 /devstats: Updating git repos for all projects
+2019-12-13 06:26:34 /devstats: Updated git repos, took: 1.316723106s
+2019-12-13 06:26:34 /devstats: Syncing #42 strimzi
+2019-12-13 06:26:57 /devstats: Synced strimzi, took: 22.925217009s
+2019-12-13 06:26:57 /devstats: Synced all projects in: 24.277363437s
+pod 'devstats-kubevirt-1576218480-22s4f'
+2019-12-13 06:28:08 /devstats: Updating git repos for all projects
+2019-12-13 06:28:11 /devstats: Updated git repos, took: 2.80865564s
+2019-12-13 06:28:11 /devstats: Syncing #43 kubevirt
+2019-12-13 06:29:08 /devstats: Synced kubevirt, took: 56.875540891s
+2019-12-13 06:29:08 /devstats: Synced all projects in: 59.71547211s
+pod 'devstats-longhorn-1576218540-rg5s4'
+2019-12-13 06:29:22 /devstats: Updating git repos for all projects
+2019-12-13 06:29:23 /devstats: Updated git repos, took: 1.013618405s
+2019-12-13 06:29:23 /devstats: Syncing #44 longhorn
+2019-12-13 06:29:46 /devstats: Synced longhorn, took: 23.62698299s
+2019-12-13 06:29:46 /devstats: Synced all projects in: 29.672076115s
+pod 'devstats-cncf-1576217940-2p8q8'
+2019-12-13 06:19:28 /devstats: Updating git repos for all projects
+2019-12-13 06:19:29 /devstats: Updated git repos, took: 1.713782193s
+2019-12-13 06:19:29 /devstats: Syncing #10004 cncf
+2019-12-13 06:21:14 /devstats: Synced cncf, took: 1m44.667566643s
+2019-12-13 06:21:14 /devstats: Synced all projects in: 1m46.413786085s
+pod 'devstats-all-1576216200-v5m4t'
+2019-12-13 05:50:10 /devstats: Updating git repos for all projects
+2019-12-13 05:50:24 /devstats: Updated git repos, took: 13.478844207s
+2019-12-13 05:50:24 /devstats: Skipping #1001 all
+2019-12-13 05:50:24 /devstats: Synced all projects in: 13.511792461s
+pod 'devstats-opencontainers-1576218000-29thw'
+2019-12-13 06:20:07 /devstats: Updating git repos for all projects
+2019-12-13 06:20:08 /devstats: Updated git repos, took: 1.141209018s
+2019-12-13 06:20:08 /devstats: Syncing #10001 opencontainers
+2019-12-13 06:20:31 /devstats: Synced opencontainers, took: 23.373318694s
+2019-12-13 06:20:31 /devstats: Synced all projects in: 24.546495509s
+pod 'devstats-istio-1576218000-zvffh'
+2019-12-13 06:20:05 /devstats: Updating git repos for all projects
+2019-12-13 06:20:07 /devstats: Updated git repos, took: 2.22269399s
+2019-12-13 06:20:07 /devstats: Skipping #10002 istio
+2019-12-13 06:20:07 /devstats: Synced all projects in: 2.264729608s
+pod 'devstats-knative-1576218060-v72ct'
+2019-12-13 06:21:14 /devstats: Updating git repos for all projects
+2019-12-13 06:21:15 /devstats: Updated git repos, took: 1.358887488s
+2019-12-13 06:21:15 /devstats: Skipping #10003 knative
+2019-12-13 06:21:15 /devstats: Synced all projects in: 1.390676088s
+pod 'devstats-linux-1576217940-bwxwj'
+2019-12-13 06:19:32 /devstats: Updating git repos for all projects
+2019-12-13 06:19:35 /devstats: Updated git repos, took: 3.452907188s
+2019-12-13 06:19:35 /devstats: Syncing #10006 linux
+2019-12-13 06:20:02 /devstats: Synced linux, took: 26.47295977s
+2019-12-13 06:20:02 /devstats: Synced all projects in: 29.95810493s
+pod 'devstats-zephyr-1576218540-wdgz9'
+2019-12-13 06:29:20 /devstats: Updating git repos for all projects
+2019-12-13 06:29:26 /devstats: Updated git repos, took: 6.051712728s
+2019-12-13 06:29:26 /devstats: Skipping #10007 zephyr
+2019-12-13 06:29:26 /devstats: Synced all projects in: 6.086389319s
+pod 'devstats-sam-1576218360-cwbb4'
+2019-12-13 06:26:33 /devstats: Updating git repos for all projects
+2019-12-13 06:26:34 /devstats: Updated git repos, took: 1.18073702s
+2019-12-13 06:26:34 /devstats: Syncing #10008 sam
+2019-12-13 06:27:03 /devstats: Synced sam, took: 28.759925671s
+2019-12-13 06:27:03 /devstats: Synced all projects in: 29.972204825s
+pod 'devstats-azf-1576218360-fqsn5'
+2019-12-13 06:26:30 /devstats: Updating git repos for all projects
+2019-12-13 06:26:32 /devstats: Updated git repos, took: 1.494940816s
+2019-12-13 06:26:32 /devstats: Syncing #10009 azf
+2019-12-13 06:27:27 /devstats: Synced azf, took: 54.694714573s
+2019-12-13 06:27:27 /devstats: Synced all projects in: 56.228330235s
+pod 'devstats-riff-1576218420-27zcb'
+2019-12-13 06:27:36 /devstats: Updating git repos for all projects
+2019-12-13 06:27:37 /devstats: Updated git repos, took: 787.547411ms
+2019-12-13 06:27:37 /devstats: Syncing #10010 riff
+2019-12-13 06:28:01 /devstats: Synced riff, took: 23.952369795s
+2019-12-13 06:28:01 /devstats: Synced all projects in: 24.772448326s
+pod 'devstats-fn-1576218420-f6ng9'
+2019-12-13 06:27:32 /devstats: Updating git repos for all projects
+2019-12-13 06:27:33 /devstats: Updated git repos, took: 821.286136ms
+2019-12-13 06:27:33 /devstats: Syncing #10011 fn
+2019-12-13 06:27:57 /devstats: Synced fn, took: 24.099534027s
+2019-12-13 06:27:57 /devstats: Synced all projects in: 24.951062176s
+pod 'devstats-openwhisk-1576218420-z5s97'
+2019-12-13 06:27:35 /devstats: Updating git repos for all projects
+2019-12-13 06:27:36 /devstats: Updated git repos, took: 645.189062ms
+2019-12-13 06:27:36 /devstats: Syncing #10012 openwhisk
+2019-12-13 06:27:56 /devstats: Synced openwhisk, took: 20.464780554s
+2019-12-13 06:27:56 /devstats: Synced all projects in: 21.14501102s
+pod 'devstats-openfaas-1576218480-fbrmd'
+2019-12-13 06:28:09 /devstats: Updating git repos for all projects
+2019-12-13 06:28:10 /devstats: Updated git repos, took: 618.036125ms
+2019-12-13 06:28:10 /devstats: Syncing #10013 openfaas
+2019-12-13 06:28:44 /devstats: Synced openfaas, took: 34.016078175s
+2019-12-13 06:28:44 /devstats: Synced all projects in: 34.665688934s
+pod 'devstats-graphql-1576218240-8dzqk'
+2019-12-13 06:24:04 /devstats: Updating git repos for all projects
+2019-12-13 06:24:05 /devstats: Updated git repos, took: 767.379098ms
+2019-12-13 06:24:05 /devstats: Syncing #3001 graphql
+2019-12-13 06:24:45 /devstats: Synced graphql, took: 40.508752341s
+2019-12-13 06:24:45 /devstats: Synced all projects in: 41.311007144s
+pod 'devstats-graphqljs-1576218300-5vnx9'
+2019-12-13 06:25:15 /devstats: Updating git repos for all projects
+2019-12-13 06:25:16 /devstats: Updated git repos, took: 769.668579ms
+2019-12-13 06:25:16 /devstats: Syncing #2001 graphqljs
+2019-12-13 06:25:37 /devstats: Synced graphqljs, took: 20.867079645s
+2019-12-13 06:25:37 /devstats: Synced all projects in: 21.670652784s
+pod 'devstats-graphiql-1576218300-hwvh2'
+2019-12-13 06:25:14 /devstats: Updating git repos for all projects
+2019-12-13 06:25:14 /devstats: Updated git repos, took: 549.942102ms
+2019-12-13 06:25:14 /devstats: Syncing #2002 graphiql
+2019-12-13 06:25:37 /devstats: Synced graphiql, took: 22.486432658s
+2019-12-13 06:25:37 /devstats: Synced all projects in: 23.068658255s
+pod 'devstats-expressgraphql-1576218360-879gb'
+2019-12-13 06:26:30 /devstats: Updating git repos for all projects
+2019-12-13 06:26:31 /devstats: Updated git repos, took: 965.291189ms
+2019-12-13 06:26:31 /devstats: Syncing #2003 expressgraphql
+2019-12-13 06:26:49 /devstats: Synced expressgraphql, took: 17.518347569s
+2019-12-13 06:26:49 /devstats: Synced all projects in: 18.521381139s
+pod 'devstats-graphqlspec-1576218360-fmp5q'
+2019-12-13 06:26:24 /devstats: Updating git repos for all projects
+2019-12-13 06:26:24 /devstats: Updated git repos, took: 478.914548ms
+2019-12-13 06:26:24 /devstats: Syncing #2004 graphqlspec
+2019-12-13 06:26:43 /devstats: Synced graphqlspec, took: 18.31378509s
+2019-12-13 06:26:43 /devstats: Synced all projects in: 18.82393166s
+pod 'devstats-spinnaker-1576218000-zzg8n'
+2019-12-13 06:20:08 /devstats: Updating git repos for all projects
+2019-12-13 06:20:10 /devstats: Updated git repos, took: 2.094855043s
+2019-12-13 06:20:10 /devstats: Syncing #4001 spinnaker
+2019-12-13 06:21:21 /devstats: Synced spinnaker, took: 1m10.613025978s
+2019-12-13 06:21:21 /devstats: Synced all projects in: 1m12.73877586s
+pod 'devstats-tekton-1576218120-p456j'
+2019-12-13 06:22:28 /devstats: Updating git repos for all projects
+2019-12-13 06:22:29 /devstats: Updated git repos, took: 660.642839ms
+2019-12-13 06:22:29 /devstats: Syncing #4002 tekton
+2019-12-13 06:23:12 /devstats: Synced tekton, took: 42.825635504s
+2019-12-13 06:23:12 /devstats: Synced all projects in: 43.518267067s
+pod 'devstats-jenkins-1576216380-kfxw9'
+2019-12-13 05:53:35 /devstats: Updating git repos for all projects
+2019-12-13 05:54:01 /devstats: Updated git repos, took: 26.165691169s
+2019-12-13 05:54:01 /devstats: Syncing #4003 jenkins
+2019-12-13 06:01:25 /devstats: Synced jenkins, took: 7m23.545070297s
+2019-12-13 06:01:25 /devstats: Synced all projects in: 7m49.741721885s
+pod 'devstats-jenkinsx-1576218120-g5p7j'
+2019-12-13 06:22:23 /devstats: Updating git repos for all projects
+2019-12-13 06:22:25 /devstats: Updated git repos, took: 2.311902102s
+2019-12-13 06:22:25 /devstats: Syncing #4004 jenkinsx
+2019-12-13 06:24:57 /devstats: Synced jenkinsx, took: 2m32.008014223s
+2019-12-13 06:24:57 /devstats: Synced all projects in: 2m34.352356143s
+pod 'devstats-allcdf-1576215780-lcdvz'
+2019-12-13 05:43:28 /devstats: Updating git repos for all projects
+2019-12-13 05:44:00 /devstats: Updated git repos, took: 31.765738261s
+2019-12-13 05:44:00 /devstats: Syncing #5001 allcdf
+2019-12-13 05:53:28 /devstats: Synced allcdf, took: 9m28.238682361s
+2019-12-13 05:53:28 /devstats: Synced all projects in: 10m0.053892995s
+pod 'devstats-cii-1576216140-ss4km'
+2019-12-13 05:49:04 /devstats: Updating git repos for all projects
+2019-12-13 05:49:07 /devstats: Updated git repos, took: 2.979083551s
+2019-12-13 05:49:07 /devstats: Skipping #10014 cii
+2019-12-13 05:49:07 /devstats: Synced all projects in: 3.016284533s
+pod 'devstats-affiliations-kubernetes-1575813600-6tvt7'
+pod 'devstats-affiliations-prometheus-1575900000-88lcs'
+pod 'devstats-affiliations-opentracing-1575986400-ccrbd'
+pod 'devstats-affiliations-fluentd-1576072800-76qvm'
+pod 'devstats-affiliations-linkerd-1576159200-vrdsz'
+pod 'devstats-affiliations-grpc-1575640800-295gg'
+pod 'devstats-affiliations-coredns-1575727200-4kg84'
+pod 'devstats-affiliations-containerd-1575814500-9vqwk'
+pod 'devstats-affiliations-rkt-1575900900-ktsp4'
+pod 'devstats-affiliations-cni-1575987300-94khf'
+pod 'devstats-affiliations-envoy-1576073700-mmtg6'
+pod 'devstats-affiliations-jaeger-1576160100-zslq6'
+pod 'devstats-affiliations-notary-1575641700-p5wjc'
+pod 'devstats-affiliations-tuf-1575887400-rr74d'
+pod 'devstats-affiliations-rook-1575815400-5hcsv'
+pod 'devstats-affiliations-vitess-1575901800-h9jtg'
+pod 'devstats-affiliations-nats-1575988200-v2mg6'
+pod 'devstats-affiliations-opa-1576074600-7mm8r'
+pod 'devstats-affiliations-spiffe-1576161000-pzvch'
+pod 'devstats-affiliations-spire-1575642600-4mlzx'
+pod 'devstats-affiliations-cloudevents-1575729000-58l2f'
+pod 'devstats-affiliations-telepresence-1575816300-v56tv'
+pod 'devstats-affiliations-helm-1575902700-bsx7j'
+pod 'devstats-affiliations-openmetrics-1575989100-dcdbz'
+pod 'devstats-affiliations-harbor-1576075500-n4cvh'
+pod 'devstats-affiliations-etcd-1576161900-ln9c2'
+pod 'devstats-affiliations-tikv-1575643500-rgt84'
+pod 'devstats-affiliations-cortex-1575729900-svkr8'
+pod 'devstats-affiliations-buildpacks-1575817200-k2kbk'
+pod 'devstats-affiliations-falco-1575903600-c2nvq'
+pod 'devstats-affiliations-dragonfly-1575990000-p9bdt'
+pod 'devstats-affiliations-virtualkubelet-1576076400-zq8gw'
+pod 'devstats-affiliations-kubeedge-1576162800-lw7z6'
+pod 'devstats-affiliations-brigade-1575644400-mqjm9'
+pod 'devstats-affiliations-crio-1575730800-8rggq'
+pod 'devstats-affiliations-networkservicemesh-1575818100-xx4sr'
+pod 'devstats-affiliations-openebs-1575904500-njnjm'
+pod 'devstats-affiliations-opentelemetry-1575990900-tgj4g'
+pod 'devstats-affiliations-thanos-1575656100-44bqc'
+pod 'devstats-affiliations-flux-1575742500-nck7l'
+pod 'devstats-affiliations-intoto-1575829800-vsw6m'
+pod 'devstats-affiliations-strimzi-1575916200-k8kgl'
+pod 'devstats-affiliations-kubevirt-1575917100-llvvx'
+pod 'devstats-affiliations-longhorn-1576010700-tzlj7'
+pod 'devstats-affiliations-cncf-1575741600-4vq62'
+pod 'devstats-affiliations-all-1575746100-mgrdj'
+pod 'devstats-affiliations-opencontainers-1575828900-tvszj'
+pod 'devstats-affiliations-istio-1575915300-6wb66'
+pod 'devstats-affiliations-knative-1576001700-j4j87'
+pod 'devstats-affiliations-linux-1576174500-cpz7g'
+pod 'devstats-affiliations-zephyr-1576088100-bqtzm'
+pod 'devstats-affiliations-sam-1576002600-9f8b4'
+pod 'devstats-affiliations-azf-1576089000-999vs'
+pod 'devstats-affiliations-riff-1576175400-csbrd'
+pod 'devstats-affiliations-fn-1575657000-j9q5k'
+pod 'devstats-affiliations-openwhisk-1575743400-7t85v'
+pod 'devstats-affiliations-openfaas-1575830700-h8plj'
+pod 'devstats-affiliations-graphql-1575655200-zpgdg'
+pod 'devstats-affiliations-graphqljs-1575914400-d79sc'
+pod 'devstats-affiliations-graphiql-1576000800-hqtvs'
+pod 'devstats-affiliations-expressgraphql-1576173600-26vnp'
+pod 'devstats-affiliations-graphqlspec-1576087200-q4n7k'
+pod 'devstats-affiliations-spinnaker-1576163700-xmbgj'
+pod 'devstats-affiliations-tekton-1576077300-x2stl'
+pod 'devstats-affiliations-jenkins-1575731700-dwhl7'
+pod 'devstats-affiliations-jenkinsx-1575645300-69x9d'
+pod 'devstats-affiliations-allcdf-1575828000-gpz2x'
+pod 'devstats-affiliations-cii-1576089900-rbx82'
+2019-12-11 18:52:45 cii/gha2db_sync: gha2db_sync.go: Running on: BendingBender/object-assign-shim+DataTables/DataTables+FasterXML/jackson-annotations+FasterXML/jackson-core+FasterXML/jackson-databind+FortAwesome/Font-Awesome+Gozala/querystring+JamesNK/Newtonsoft.Json+JedWatson/classnames+JohnPostlethwait/stringify+Modernizr/Modernizr+OverZealous/run-sequence+Raynos/xtend+ReactTraining/react-router+acornjs/acorn+ahmadnassri/node-har-validator+angular-translate/angular-translate+angular-ui/ui-router+angular/angular+angular/angular.js+angular/animations-builds+angular/cdk-builds+angular/common-builds+angular/core-builds+angular/forms-builds+angular/http-builds+angular/platform-browser-builds+angular/platform-browser-dynamic-builds+angular/platform-server-builds+angular/zone.js+apache/commons-codec+apache/commons-collections+apache/commons-io+apache/commons-lang+apache/commons-logging+apache/httpcomponents-client+apache/log4j+ashtuchkin/iconv-lite+auth0/angular2-jwt+auth0/node-jsonwebtoken+axios/axios+beanvalidation/beanvalidation-api+beatgammit/base64-js+bestiejs/punycode.js+brix/crypto-js+broofa/node-mime+broofa/node-uuid+browserify/browserify+browserify/resolve+calvinmetcalf/process-nextick-args+caolan/async+chalk/ansi-regex+chalk/ansi-styles+chalk/chalk+chalk/strip-ansi+chalk/supports-color+davepacheco/node-extsprintf+davepacheco/node-verror+devongovett/browserify-istanbul+dotnet/corefx+dougwilson/nodejs-depd+eclipse-ee4j/jaxrs-api+eclipse-ee4j/servlet-api+epoberezkin/ajv+expressjs/body-parser+expressjs/compression+expressjs/cookie-parser+expressjs/cors+expressjs/express+expressjs/morgan+expressjs/serve-favicon+expressjs/session+facebook/prop-types+facebook/react+felixge/node-combined-stream+feross/is-buffer+feross/safe-buffer+form-data/form-data+google/gson+google/guava+google/guice+gotwarlost/istanbul+gulpjs/vinyl+hapijs/boom+hapijs/cryptiles+hapijs/hoek+hueniverse/hawk+hueniverse/sntp+hughsk/vinyl-buffer+hughsk/vinyl-source-stream+isaacs/abbrev-js+isaacs/inherits+isaacs/minimatch+isaacs/node-glob+isaacs/node-graceful-fs+isaacs/node-lru-cache+isaacs/node-which+isaacs/once+isaacs/rimraf+isaacs/sax-js+janvanhelvoort/browserify-conditionalify+jaredhanson/passport+jashkenas/underscore+jonschlinkert/arr-diff+jonschlinkert/define-property+jonschlinkert/fill-range+jonschlinkert/is-extendable+jonschlinkert/is-extglob+jonschlinkert/is-glob+jonschlinkert/is-number+jonschlinkert/isobject+jonschlinkert/kind-of+joyent/node-http-signature+joyent/node-jsprim+joyent/node-sshpk+jquery-validation/jquery-validation+jquery/esprima+jquery/jquery+jquery/jquery-ui+jshttp/accepts+jshttp/http-errors+jshttp/mime-db+jshttp/mime-types+jshttp/statuses+juliangruber/balanced-match+juliangruber/brace-expansion+juliangruber/isarray+kelektiv/node-uuid+kennethreitz/requests+ljharb/qs+lodash/lodash+madler/zlib+mafintosh/end-of-stream+maxogden/concat-stream+mcavage/node-assert-plus+mde/ejs+micromatch/braces+micromatch/micromatch+mikeal/caseless+mikeal/oauth-sign+mikeal/tunnel-agent+moment/moment+moment/moment-timezone+motdotla/dotenv+moxystudio/node-cross-spawn+mozilla/source-map+mysql-net/MySqlConnector+nanjingboy/uglify+necolas/normalize.css+ng-bootstrap/ng-bootstrap+nodejs/readable-stream+nodejs/string_decoder+npm/node-semver+npm/nopt+nunit/nunit+omsmith/browserify-ngannotate+openssl/openssl+petkaantonov/bluebird+pieroxy/lz-string+pillarjs/finalhandler+pillarjs/send+pvorb/node-clone+qos-ch/logback+qos-ch/slf4j+que-etc/resize-observer-polyfill+reactivex/rxjs+reduxjs/react-redux+reduxjs/redux+reduxjs/redux-thunk+request/request+request/request-promise+robrich/orchestrator+robrich/pretty-hrtime+rvagg/through2+rzwitserloot/lombok+salesforce/tough-cookie+sass/node-sass+scala/scala+sindresorhus/camelcase+sindresorhus/del+sindresorhus/find-up+sindresorhus/has-flag+sindresorhus/is-fullwidth-code-point+sindresorhus/load-json-file+sindresorhus/object-assign+sindresorhus/path-exists+sindresorhus/path-type+sindresorhus/pify+sindresorhus/read-pkg+sindresorhus/string-width+sindresorhus/strip-bom+spring-projects/spring-boot.git+substack/brfs+substack/minimist+substack/node-mkdirp+substack/node-wordwrap+thlorenz/browserify-shim+tj/commander.js+twbs/bootstrap+types/env-node+typicaljoe/taffydb+visionmedia/bytes.js+wesleytodd/setprototypeof+winstonjs/winston+yargs/cliui+yargs/yargs+yargs/yargs-parser+zeit/ms+zloirock/core-js/

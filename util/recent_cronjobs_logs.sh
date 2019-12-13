@@ -11,3 +11,9 @@ do
   echo "pod '$pod'" >> "$2"
   kubectl logs $pod >> "$2"
 done
+pods=`LAST=1 ./list_projects_objects.sh $1 po 'devstats-affiliations-' '-'`
+for pod in $pods
+do
+  echo "pod '$pod'" >> "$2"
+  kubectl logs $pod | grep -E '[eE]rror' >> "$2"
+done
