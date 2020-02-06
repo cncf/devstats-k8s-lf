@@ -1,10 +1,9 @@
 #!/bin/bash
 ./list_devstats_running_pods.sh
+echo 'Test status:'
 ./logs_test.sh
-./logs_prod.sh
-echo 'Test status:'
 cat logs_test.txt | grep -i -E '([^[:alnum:]_]|^)(errors?|flag)([^[:alnum:]_]|$)+'
-echo '------------'
+echo 'Prod status:'
+./logs_prod.sh
 cat logs_prod.txt | grep -i -E '([^[:alnum:]_]|^)(errors?|flag)([^[:alnum:]_]|$)+'
-echo 'Test status:'
 echo '------------'
