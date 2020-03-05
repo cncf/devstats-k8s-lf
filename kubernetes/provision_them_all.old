@@ -58,7 +58,7 @@ PROJ=notary                 PROJDB=notary                 PROJREPO="theupdatefra
 PROJ=tuf                    PROJDB=tuf                    PROJREPO="theupdateframework/tuf"          ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 28
 PROJ=rook                   PROJDB=rook                   PROJREPO="rook/rook"                       ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 29
 PROJ=vitess                 PROJDB=vitess                 PROJREPO="vitessio/vitess"                 ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 30
-PROJ=nats                   PROJDB=nats                   PROJREPO="nats-io/gnatsd"                  ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 31
+PROJ=nats                   PROJDB=nats                   PROJREPO="nats-io/nats-server"             ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 31
 PROJ=opa                    PROJDB=opa                    PROJREPO="open-policy-agent/opa"           ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 32
 PROJ=spiffe                 PROJDB=spiffe                 PROJREPO="spiffe/spiffe"                   ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 33
 PROJ=spire                  PROJDB=spire                  PROJREPO="spiffe/spire"                    ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 34
