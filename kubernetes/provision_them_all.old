@@ -70,7 +70,7 @@ PROJ=harbor                 PROJDB=harbor                 PROJREPO="goharbor/har
 PROJ=etcd                   PROJDB=etcd                   PROJREPO="etcd-io/etcd"                    ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 40
 PROJ=tikv                   PROJDB=tikv                   PROJREPO="tikv/tikv"                       ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 41
 PROJ=cortex                 PROJDB=cortex                 PROJREPO="cortexproject/cortex"            ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 42
-PROJ=buildpacks             PROJDB=buildpacks             PROJREPO="buildpack/lifecycle"             ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 43
+PROJ=buildpacks             PROJDB=buildpacks             PROJREPO="buildpacks/lifecycle"            ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 43
 PROJ=falco                  PROJDB=falco                  PROJREPO="falcosecurity/falco"             ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 44
 PROJ=dragonfly              PROJDB=dragonfly              PROJREPO="dragonflyoss/Dragonfly"          ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 45
 PROJ=virtualkubelet         PROJDB=virtualkubelet         PROJREPO="virtual-kubelet/virtual-kubelet" ./kubernetes/apply_manifest.sh ./kubernetes/manifests/devstats-provision.yaml || exit 46
