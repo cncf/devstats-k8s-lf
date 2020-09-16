@@ -1,4 +1,5 @@
 #!/bin/bash
+df -h | grep '/var/openebs'
 ./list_devstats_running_pods.sh
 echo 'Test status:'
 ./logs_test.sh
