@@ -1,6 +1,9 @@
 #!/bin/bash
 df -h | grep '/var/openebs'
 df -h | grep '/dev/sda'
+df -ih | grep '/var/openebs'
+df -ih | grep '/dev/sda'
+kubectl describe nodes | grep HasDiskPressure
 ./list_devstats_running_pods.sh
 echo 'Test status:'
 ./logs_test.sh
