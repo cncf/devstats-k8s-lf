@@ -1,5 +1,6 @@
 #!/bin/bash
 df -h | grep '/var/openebs'
+df -h | grep '/dev/sda'
 ./list_devstats_running_pods.sh
 echo 'Test status:'
 ./logs_test.sh
