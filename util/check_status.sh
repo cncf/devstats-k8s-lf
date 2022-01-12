@@ -15,3 +15,6 @@ kubectl exec -itn devstats-prod devstats-postgres-0 -- /usr/local/bin/patronictl
 cat logs_prod.txt | grep -i -E '([^[:alnum:]_]|^)(errors?|flag)([^[:alnum:]_]|$)+'
 echo '------------'
 ./check_calico.sh
+echo 'Recent affiliations imports'
+kubectl get po -A | grep affiliations | grep -E '\s+[0-9]+h$'
+echo '------------'
