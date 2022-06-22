@@ -1,4 +1,6 @@
 #!/bin/bash
+# DRY=1 - dry-run mode
+# VERBOSE=1 - output stats even if nothing needs to be done
 if [ -z "$1" ]
 then
   echo "$0: you need to specify env: test or prod"
@@ -70,8 +72,14 @@ then
   if [ "$s" = "running,running,running,running" ]
   then
     echo "${now}: Detected reinit condition for Node #${reinit}, all reinits needed: ${reinits}"
-    echo "${now}: kubectl exec -itn devstats-${1} devstats-postgres-0 -- patronictl reinit devstats-postgres devstats-postgres-${reinit} --force"
-    kubectl exec -n devstats-${1} devstats-postgres-0 -- patronictl reinit devstats-postgres devstats-postgres-${reinit} --force
+    if [ -z "${DRY}" ]
+    then
+      echo "${now}: kubectl exec -itn devstats-${1} devstats-postgres-0 -- patronictl reinit devstats-postgres devstats-postgres-${reinit} --force"
+      kubectl exec -n devstats-${1} devstats-postgres-0 -- patronictl reinit devstats-postgres devstats-postgres-${reinit} --force
+    else
+      echo "${now}: ${1} check runs in dry-run mode"
+      echo "${now}: would execute: kubectl exec -itn devstats-${1} devstats-postgres-0 -- patronictl reinit devstats-postgres devstats-postgres-${reinit} --force"
+    fi
   else
     echo "${now}: Nodes ${reinits} need to be reinitialized, but other replica ${other} reinitialize is in progress"
   fi
