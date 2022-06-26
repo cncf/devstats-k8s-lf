@@ -1,7 +1,7 @@
 #!/bin/bash
 #kubectl get deployment -n "${env}" "$f" -o json | jq -rS '.spec.template.spec.containers[0].resources.requests.memory'
 lmem=3Gi
-lcpu=1000m
+lcpu=1
 mem=128Mi
 cpu=50m
 for env in devstats-test devstats-prod
