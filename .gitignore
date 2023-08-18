@@ -71,3 +71,4 @@ img.tar
 replacer
 runq
 sqlitedb
+*.sql
