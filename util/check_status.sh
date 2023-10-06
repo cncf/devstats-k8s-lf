@@ -1,8 +1,10 @@
 #!/bin/bash
 df -h | grep '/var/openebs'
 df -h | grep '/dev/sda'
+df -h | grep '/dev/sdb'
 df -ih | grep '/var/openebs'
 df -ih | grep '/dev/sda'
+df -ih | grep '/dev/sdb'
 kubectl describe nodes | grep HasDiskPressure
 kubectl describe nodes | grep HasMemoryPressure
 ./list_devstats_running_pods.sh
