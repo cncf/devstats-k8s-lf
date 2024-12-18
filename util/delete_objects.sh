@@ -23,6 +23,12 @@ do
     pods="$pods $obj"
   fi
 done
+if [ -z "$3" ]
+then
+  echo "kubectl delete $1 ${pods}" >> delete_objects.log 
+else
+  echo "kubectl delete $1 ${pods} \"${@:3:99}\"" >> delete_objects.log
+fi
 if [ ! -z "$pods" ]
 then
   if [ -z "$DRYRUN" ]

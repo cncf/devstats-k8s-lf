@@ -67,6 +67,7 @@ splitcrons
 !/top_50_k8s_yearly_contributors.csv
 !/k8s_yearly_contributors_with_50.csv
 /util/logs_*.txt
+/util/*.log
 img.tar
 replacer
 runq
