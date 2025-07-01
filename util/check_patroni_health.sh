@@ -87,3 +87,7 @@ elif [ ! -z "${VERBOSE}" ]
 then
   echo "${now}: ${1} patroni health OK"
 fi
+kubectl exec -itn devstats-${1} devstats-postgres-0 -- find /home/postgres/pgdata/pgroot/data -type f -name 'core' -delete
+kubectl exec -itn devstats-${1} devstats-postgres-1 -- find /home/postgres/pgdata/pgroot/data -type f -name 'core' -delete
+kubectl exec -itn devstats-${1} devstats-postgres-2 -- find /home/postgres/pgdata/pgroot/data -type f -name 'core' -delete
+kubectl exec -itn devstats-${1} devstats-postgres-3 -- find /home/postgres/pgdata/pgroot/data -type f -name 'core' -delete
