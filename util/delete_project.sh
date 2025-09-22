@@ -34,3 +34,4 @@ if [ "${OP}" = "delete" ]
 then
   kubectl exec -in "${NS}" "devstats-postgres-${MN}" -- psql -c "drop database ${1}"
 fi
+kubectl "${OP}" -n "${NS}" pvc "devstats-pvc-${1}"
