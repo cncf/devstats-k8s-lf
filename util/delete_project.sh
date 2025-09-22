@@ -3,6 +3,7 @@
 # [OP=delete]
 # [MN=0]
 # [VE=1]
+# VE=1 OP=delete NS=devstats-prod MN=0 ./util/delete_project.sh proj-name
 if [ -z "${1}" ]
 then
   echo "$0: you need to specify project name as a 1st argument"
