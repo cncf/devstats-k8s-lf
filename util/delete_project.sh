@@ -29,9 +29,9 @@ fi
 kubectl "${OP}" -n "${NS}" cronjob "devstats-${1}" "devstats-affiliations-${1}"
 kubectl "${OP}" -n "${NS}" deployment "devstats-grafana-${1}"
 kubectl "${OP}" -n "${NS}" service "devstats-service-${1}"
-kubectl exec -in "${NS}" "devstats-postgres-${MN}" -- psql "${1}" -c 'select count(*) from gha_events'
+kubectl exec -in "${NS}" "devstats-postgres-${MN}" -c devstats-postgres -- psql "${1}" -c 'select count(*) from gha_events'
 if [ "${OP}" = "delete" ]
 then
-  kubectl exec -in "${NS}" "devstats-postgres-${MN}" -- psql -c "drop database ${1}"
+  kubectl exec -in "${NS}" "devstats-postgres-${MN}" -c devstats-postgres -- psql -c "drop database ${1}"
 fi
 kubectl "${OP}" -n "${NS}" pvc "devstats-pvc-${1}"
