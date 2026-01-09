@@ -1,4 +1,5 @@
 #!/bin/bash
+echo 'Consider running cncf/devstats:./devel/devstats-flags-report.sh prod|test for additional insights.'
 df -h | grep 'md0'
 kubectl describe nodes | grep HasDiskPressure
 kubectl describe nodes | grep HasMemoryPressure
